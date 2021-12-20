@@ -1,0 +1,57 @@
+.s-purple{
+    background:#8C30F5 ;/*cho background cả block màu trắng*/
+    color: white; /*cho chữ màu trắng https://s.letweb.net/s/glxnqg */
+}
+html{
+    font-family: 'Inter', sans-serif; /* Quy định font, copy từ google font qua https://s.letweb.net/s/e61xng*/
+
+}
+body{
+    margin: 0; /* Để loại bỏ margin mặc định là 4 khoảng trống ở 4 bên của trình duyệt https://s.letweb.net/s/d7130d */
+}
+.section{
+    padding-top: 80px; /* Top 80, ở vị trí này https://s.letweb.net/s/eyj3ve*/
+    padding-bottom: 80px; /* Botton 80, ở vị trí này https://s.letweb.net/s/dzklxd*/
+    text-align: center; /* Do tất cả các chữ trên section đều canh giữa nên cho là center*/
+    
+}
+.section h2{
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 40px;/* HỎi: Sao bỏ dòng này cũng không ảnh hường gì hết https://s.letweb.net/s/d1803e ? */ 
+
+    max-width: 730px; /* 730 là max-width của tiêu đề, tại sao là 730 mà không phải số khác? => Coi trong figma ttps://s.letweb.net/s/dw2n7d*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.section .btn-white{
+    margin-bottom: 64px; /*64 là khoảng cách từ button tới row dưới, chi tiết xem hình https://s.letweb.net/s/gx29oe */
+}
+.btn{
+    border-radius: 6px;
+    padding: 12px 32px;
+    display: inline-block; /* Tại sao phải sử dụng inline-block mà không phỉa là cái khác-> Xem giải thích tại https://www.w3schools.com/css/css_inline-block.asp*/
+    text-decoration: none; /* Sử dụng để xóa gạch chân khỏi liên kết, xem giải thích tại https://www.w3schools.com/css/css_text_decoration.asp*/
+}
+.btn-white{
+    background: white;
+    color: #8C30F5;
+   
+}
+.btn-white:hover {
+    background-color: #555555;
+    color: white;
+} /* Xem các ví dụ & hướng dẫn tại https://www.w3schools.com/css/css3_buttons.asp*/
+.row{
+    display: flex;/*Tại sao dùng display & flex? "flex" Displays an element as a block-level flex container, xem các ví dụ và giải thích tại https://www.w3schools.com/cssref/pr_class_display.asp*/
+    width: 100%; 
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto; /*Tại sao lại xài auto? Auto: The browser calculates a margin . https://www.w3schools.com/cssref/pr_margin.asp */
+    justify-content: space-between; /* Xem thêm các ví dụ, giải thích về justify-content tại https://www.w3schools.com/cssref/css3_pr_justify-content.asp*, nhớ coi minh họa ở nút play it https://s.letweb.net/s/dq8n6d/ */
+}
+.feature-i{
+    display: flex; /*"flex" Displays an element as a block-level flex container, xem các ví dụ và giải thích tại https://www.w3schools.com/cssref/pr_class_display.asp*/
+    column-gap: 15px; /* column-gap: chỉ định khoảng cách giữa các cột, xem thêm tại https://www.w3schools.com/cssref/css3_pr_column-gap.asp */
+
+}
